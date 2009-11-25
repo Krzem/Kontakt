@@ -225,3 +225,65 @@ Processing KontaktiesController#index (for 127.0.0.1 at 2009-11-25 12:54:05) [GE
 Rendering template within layouts/kontakties
 Rendering kontakties/index
 Completed in 507ms (View: 141, DB: 360) | 200 OK [http://localhost/kontakties]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-25 13:19:25) [GET]
+  [4;36;1mPost Load (178.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 322ms (View: 93, DB: 179) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-25 13:19:55) [GET]
+  [4;36;1mPost Load (73.4ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 217ms (View: 136, DB: 73) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-25 13:19:57) [GET]
+  [4;35;1mPost Load (7.8ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 156ms (View: 105, DB: 8) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (148.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (81.8ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20091124222514)
+Migrating to CreateKontakties (20091124224404)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (41.8ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (121.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("kontakties")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("posts")[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-25 13:21:22) [GET]
+  [4;36;1mPost Load (164.4ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 269ms (View: 68, DB: 164) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-25 13:21:24) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Load (3.1ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Completed in 71ms (View: 15, DB: 3) | 200 OK [http://localhost/posts/1]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-25 13:21:26) [GET]
+  [4;36;1mPost Load (88.3ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 182ms (View: 85, DB: 88) | 200 OK [http://localhost/posts]
