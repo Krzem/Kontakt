@@ -204,3 +204,24 @@ Processing PostsController#index (for 127.0.0.1 at 2009-11-25 11:40:41) [GET]
 Rendering template within layouts/posts
 Rendering posts/index
 Completed in 181ms (View: 12, DB: 164) | 200 OK [http://localhost/posts]
+
+
+Processing KontaktiesController#index (for 127.0.0.1 at 2009-11-25 12:34:21) [GET]
+  [4;36;1mKontakty Load (284.0ms)[0m   [0;1mSELECT * FROM "kontakties" [0m
+Rendering template within layouts/kontakties
+Rendering kontakties/index
+Completed in 928ms (View: 366, DB: 284) | 200 OK [http://localhost/kontakties]
+
+
+Processing KontaktiesController#index (for 127.0.0.1 at 2009-11-25 12:51:53) [GET]
+  [4;36;1mKontakty Load (206.7ms)[0m   [0;1mSELECT * FROM "kontakties" [0m
+Rendering template within layouts/kontakties
+Rendering kontakties/index
+Completed in 800ms (View: 213, DB: 207) | 200 OK [http://localhost/kontakties]
+
+
+Processing KontaktiesController#index (for 127.0.0.1 at 2009-11-25 12:54:05) [GET]
+  [4;35;1mKontakty Load (360.2ms)[0m   [0mSELECT * FROM "kontakties" [0m
+Rendering template within layouts/kontakties
+Rendering kontakties/index
+Completed in 507ms (View: 141, DB: 360) | 200 OK [http://localhost/kontakties]

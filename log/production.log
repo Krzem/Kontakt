@@ -1,0 +1,14 @@
+
+
+Processing KontaktiesController#index (for 127.0.0.1 at 2009-11-25 13:04:49) [GET]
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: kontakties: SELECT * FROM "kontakties" ):
+  app/controllers/kontakties_controller.rb:5:in `index'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KontaktiesController#index (for 127.0.0.1 at 2009-11-25 13:05:32) [GET]
+Rendering template within layouts/kontakties
+Rendering kontakties/index
+Completed in 165ms (View: 80, DB: 83) | 200 OK [http://localhost/kontakties]
