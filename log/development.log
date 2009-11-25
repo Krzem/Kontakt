@@ -73,3 +73,134 @@ Migrating to CreateKontakties (20091124224404)
 [0m
   [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("kontakties")[0m
   [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("posts")[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-25 11:38:26) [GET]
+
+ActionController::RoutingError (No route matches "/contacts" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KontaktiesController#index (for 127.0.0.1 at 2009-11-25 11:38:32) [GET]
+  [4;36;1mKontakty Load (204.9ms)[0m   [0;1mSELECT * FROM "kontakties" [0m
+Rendering template within layouts/kontakties
+Rendering kontakties/index
+Completed in 633ms (View: 416, DB: 205) | 200 OK [http://localhost/kontakties]
+
+
+Processing KontaktiesController#new (for 127.0.0.1 at 2009-11-25 11:38:44) [GET]
+Rendering template within layouts/kontakties
+Rendering kontakties/new
+Completed in 458ms (View: 174, DB: 0) | 200 OK [http://localhost/kontakties/new]
+
+
+Processing KontaktiesController#create (for 127.0.0.1 at 2009-11-25 11:39:00) [POST]
+  Parameters: {"commit"=>"Create", "kontakty"=>{"name"=>"Pawel", "www"=>"www.star.pl", "phone"=>"483724245", "surname"=>"Krzem", "email"=>"star@wp.pl"}, "authenticity_token"=>"qf/FqBuyYkOPVl6A/bnWfd2FMPORKYCe6wvARLtbX+E="}
+  [4;35;1mKontakty Create (45.1ms)[0m   [0mINSERT INTO "kontakties" ("name", "www", "created_at", "updated_at", "phone", "surname", "email") VALUES('Pawel', 'www.star.pl', '2009-11-25 10:39:00', '2009-11-25 10:39:00', '483724245', 'Krzem', 'star@wp.pl')[0m
+Redirected to http://localhost:3000/kontakties/1
+Completed in 349ms (DB: 45) | 302 Found [http://localhost/kontakties]
+
+
+Processing KontaktiesController#show (for 127.0.0.1 at 2009-11-25 11:39:01) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mKontakty Load (81.5ms)[0m   [0;1mSELECT * FROM "kontakties" WHERE ("kontakties"."id" = 1) [0m
+Rendering template within layouts/kontakties
+Rendering kontakties/show
+Completed in 259ms (View: 12, DB: 82) | 200 OK [http://localhost/kontakties/1]
+
+
+Processing KontaktiesController#index (for 127.0.0.1 at 2009-11-25 11:39:13) [GET]
+  [4;35;1mKontakty Load (163.9ms)[0m   [0mSELECT * FROM "kontakties" [0m
+Rendering template within layouts/kontakties
+Rendering kontakties/index
+Completed in 374ms (View: 205, DB: 164) | 200 OK [http://localhost/kontakties]
+
+
+Processing KontaktiesController#show (for 127.0.0.1 at 2009-11-25 11:39:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mKontakty Load (119.5ms)[0m   [0;1mSELECT * FROM "kontakties" WHERE ("kontakties"."id" = 1) [0m
+Rendering template within layouts/kontakties
+Rendering kontakties/show
+Completed in 332ms (View: 84, DB: 120) | 200 OK [http://localhost/kontakties/1]
+
+
+Processing KontaktiesController#index (for 127.0.0.1 at 2009-11-25 11:39:17) [GET]
+  [4;35;1mKontakty Load (123.6ms)[0m   [0mSELECT * FROM "kontakties" [0m
+Rendering template within layouts/kontakties
+Rendering kontakties/index
+Completed in 177ms (View: 9, DB: 124) | 200 OK [http://localhost/kontakties]
+
+
+Processing KontaktiesController#edit (for 127.0.0.1 at 2009-11-25 11:39:18) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mKontakty Load (119.6ms)[0m   [0;1mSELECT * FROM "kontakties" WHERE ("kontakties"."id" = 1) [0m
+Rendering template within layouts/kontakties
+Rendering kontakties/edit
+Completed in 378ms (View: 131, DB: 120) | 200 OK [http://localhost/kontakties/1/edit]
+
+
+Processing KontaktiesController#index (for 127.0.0.1 at 2009-11-25 11:39:21) [GET]
+  [4;35;1mKontakty Load (122.3ms)[0m   [0mSELECT * FROM "kontakties" [0m
+Rendering template within layouts/kontakties
+Rendering kontakties/index
+Completed in 255ms (View: 88, DB: 122) | 200 OK [http://localhost/kontakties]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-25 11:39:27) [GET]
+  [4;36;1mPost Load (46.8ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 647ms (View: 262, DB: 47) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-25 11:39:29) [GET]
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 174ms (View: 87, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-25 11:39:41) [POST]
+  Parameters: {"commit"=>"Create", "post"=>{"body"=>"Tresc pierwszego postu", "title"=>"Pierwszy post"}, "authenticity_token"=>"qf/FqBuyYkOPVl6A/bnWfd2FMPORKYCe6wvARLtbX+E="}
+  [4;35;1mPost Create (122.5ms)[0m   [0mINSERT INTO "posts" ("created_at", "title", "body", "updated_at") VALUES('2009-11-25 10:39:41', 'Pierwszy post', 'Tresc pierwszego postu', '2009-11-25 10:39:41')[0m
+Redirected to http://localhost:3000/posts/1
+Completed in 489ms (DB: 122) | 302 Found [http://localhost/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-25 11:39:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Load (121.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Completed in 329ms (View: 85, DB: 121) | 200 OK [http://localhost/posts/1]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-25 11:39:45) [GET]
+  [4;35;1mPost Load (60.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 232ms (View: 86, DB: 60) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-25 11:39:48) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Load (160.9ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Completed in 485ms (View: 81, DB: 161) | 200 OK [http://localhost/posts/1]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-25 11:40:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Load (42.5ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Completed in 576ms (View: 335, DB: 43) | 200 OK [http://localhost/posts/1]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-25 11:40:41) [GET]
+  [4;35;1mPost Load (163.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 181ms (View: 12, DB: 164) | 200 OK [http://localhost/posts]
